@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#quizSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 80%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#brailleKeyboard {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.braille-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.braille-dot {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  display: inline-block;
+  margin: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.braille-dot.active {
+  background-color: #333;
+  transform: scale(1.1);
+}
+
+#confirmButton, #deleteButton, #submitAnswer,#submitAnswer1 {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#confirmButton:hover, #submitAnswer:hover,#submitAnswer1:hover {
+  background-color: #45a049;
+}
+
+#output, #question, #feedback {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  input[type="text"] {
+    width: 90%;
+  }
+
+  .braille-dot {
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+  }
+}

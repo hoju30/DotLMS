@@ -1,0 +1,128 @@
+.discussion {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.new-discussion {
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 97%;
+    max-width: 600px; /* Ensure it doesn't get too wide */
+}
+
+.new-discussion h2 {
+    margin-top: 0;
+}
+
+.new-discussion form {
+
+    flex-direction: column;
+}
+
+.new-discussion input,
+.new-discussion textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.new-discussion textarea {
+    height: 150px;  /* 設定內文輸入框的高度 */
+}
+
+.new-discussion button {
+    padding: 10px;
+    background-color: #82addb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;  /* 這一行使按鈕靠右對齊 */
+    width: 150px;
+}
+
+.new-discussion button:hover {
+    background-color: #0056b3;
+}
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .new-discussion {
+        width: 95%;
+        padding: 15px;
+    }
+    .new-discussion button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+    .new-discussion {
+        width: 95%;
+        padding: 10px;
+    }
+    .new-discussion input,
+    .new-discussion textarea {
+        width: calc(100% - 22px);
+    }
+    .new-discussion button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+
+body {
+    background-size: cover;
+    font-family: Arial, sans-serif;
+
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+
+.text {
+    font-size: 15px;
+}
+
+h2,
+p {
+    color: black;
+    margin: 5px 0;
+}
+
+.form-group {
+    width: 100%;
+    margin: 0;
+    padding-top: 10px;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+input {
+    border-radius: 5px;
+    width: 250px;
+    background-color: gray;
+    text-align: center;
+    height: 30px;
+}
+
+::placeholder {
+    color: #ffffff;
+}

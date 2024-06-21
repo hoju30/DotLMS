@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to top right, #f9ff4b, #ff5a2d);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    background: linear-gradient(to top right, #416ac9, #ffffff);
+    width: 90%;
+    max-width: 450px;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.app h1 {
+    font-size: 30px;
+    color: aliceblue;
+    font-weight: 600;
+    border-bottom: 2px solid #d9d9d9;
+    padding-bottom: 30px;
+    text-align: left;
+}
+
+.btn {
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn:hover:not([disabled]) {
+    background: #3403fb;
+    color: #fff;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#question {
+    color: #fff;
+    padding: 20px;
+    padding-left: 0;
+    padding-bottom: 10px;
+}
+
+#next-btn {
+    text-decoration: none;
+    background-color: rgb(100, 111, 230);
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct {
+    background: #49ff5b;
+    color: #ffffff;
+}
+
+.incorrect {
+    background: #f33535;
+    color: #ffffff;
+}
+
+.quiz {
+    padding: 20px 0;
+    padding-top: 5px;
+}
+
+.quiz h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* 響應式設計 */
+@media (max-width: 600px) {
+    .app {
+        width: 80%;
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px;
+        width: 95%
+    }
+
+    .app h1 {
+        font-size: 24px;
+    }
+}
